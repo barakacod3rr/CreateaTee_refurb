@@ -1,0 +1,49 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    background-color: #ffffff;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+.nav-header{
+    display: flex;
+}
+.nav-header a{
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+.nav-header a:hover{
+    color:rgb(0, 149, 179);
+}
+.nav-icon{
+display: flex;
+align-items: center;
+}
+.nav-icon i{
+    margin-right: 40px;
+    color:rgb(69, 68, 68);
+    font-size: 20px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
