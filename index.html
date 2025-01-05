@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CreateateeLTD-change 1-change 2</title>
+    <!--NORMAL CSS-->
     <link rel="stylesheet" href="css/styles.css">
+<!--bootsrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +19,11 @@
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>  <!--header logo-->
-        <a href="index.html" class="logo"><img src="img/logo.jpg"></a>
+        <a href="index.html" class="logo"><img src="img/logo23.png"></a>
         <!--header links-->
             <ul class="nav-header">
                 <a href="index.html">Home</a>
@@ -36,13 +40,120 @@
             </div>          
     </header>
 
-    <section class="main-home">
+<!-- Bootstrap Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="carousel-item active c-item">
+        <img src="img/happy2.png" class="d-block w-100 c-img" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block custom-caption">
+          <h2>VALENTINES <br> IS COMING...</h2>
+          <p>Design a T-Shirt for your loved ones</p>
+        </div>
+      </div>
+      <!-- Second Slide -->
+      <div class="carousel-item c-item">
+        <img src="img/happy1.png" class="d-block w-100 c-img" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block custom-caption">
+          <h2>BE PART OF A COMMUNITY</h2>
+          <p>Design garments for your social club or community <br> to share your art together</p>
+        </div>
+      </div>
+      <!-- Third Slide -->
+      <div class="carousel-item c-item">
+        <img src="img/happy9.png" class="d-block w-100 c-img" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block custom-caption">
+          <h2>ALWAYS WAKE UP TO YOUR STYLE</h2>
+          <p>Don't sleep on your designs</p>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <!--first section-->
+  <section class="main-home">
        <div class="main-text">
           <h1>WEAR <br>YOUR <br> PERSONALITY <br> WITH STYLE </h1>
           <p>There's nothing like our DTG Perfection</p>
           <a href="#" class="main-btn">SHOP NOW<i class='bx bx-right-arrow-alt'></i></a>
         </div>
-    </section>
+    </section> 
+   <!--VISION section-->
+   <section id="vision" class="vision-section">
+    <div class="vision-container">
+      <h2 class="section-heading">Our Vision</h2>
+      <p>
+        At CreateaTee, we envision a world where everyone can express their unique style, creativity, and story through personalized apparel. 
+        We aim to inspire individuality by combining high-quality T-shirt printing with exceptional service, empowering you to make your mark 
+        in a way that's uniquely yours.
+      </p>
+    </div>
+  </section>
+  <!-- COLLABORATORS SECTION -->
+<section id="collaborators" class="collaborators-section">
+    <div class="container">
+      <h2 class="section-heading">Our Collaborators</h2>
+      <div class="collaborators-grid">
+        <div class="collaborator">
+          <img src="img/collab1.png" alt="Collaborator 1">
+        </div>
+        <div class="collaborator">
+          <img src="img/collab2.jpg" alt="Collaborator 2">
+        </div>
+        <div class="collaborator">
+          <img src="img/collab3.png" alt="Collaborator 3">
+        </div>
+        <div class="collaborator">
+          <img src="img/collab4.jpg" alt="Collaborator 4">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FOOTER SECTION -->
+  <footer class="footer-section">
+    <div class="container footer-content">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>CreateaTee</p>
+        <p>123 Design Street, Nairobi, Kenya</p>
+        <p>Email: info@createatee.com</p>
+        <p>Phone: +254 700 123 456</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="quick-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 CreateaTee. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
 </body>
 </html>
 
