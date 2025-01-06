@@ -44,7 +44,9 @@ header{
     text-decoration: none; 
 }
 .nav-header a:hover{
-    color:rgb(0, 149, 179); 
+    color:rgb(0, 149, 179);
+    letter-spacing: 2px;
+    opacity: 0.6; 
 }
 .nav-icon{
 display: flex;
@@ -72,7 +74,11 @@ height: 595px;
 height: 100%;
 object-fit: cover;
 }
-/* Custom Caption Styling */
+/* CAROUSEL CAPTION-HOMEPAGE */
+.d-md-block{
+  background-color: transparent;
+  padding: 20px;
+}
 .custom-caption {
     text-align: left; /* Align text to the left */
     position: absolute;
@@ -133,18 +139,24 @@ section{
 .main-btn{
     display: inline-block;
     border: 2px solid #000000;
-    font-weight: 400;
-    text-transform: capitalize;
-    padding: 10px;
+    font-size: 15px;
+    color: black ;
+    padding: 16px 30px;
     text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: all .45s ease;
 }
 .main-btn a{
     color: black;
+    font-weight: 200px;
 }
-.main-btn a:hover{
-    color:rgb(0, 149, 179); 
+.main-btn:hover{
+    color:rgb(0, 114, 137); 
+    letter-spacing: 4px;
+    opacity: 1.4;
 }
-/* OUR VISION SECTION */
+/* OUR VISION SECTION-HOMEPAGE */
 .vision-section {
     padding: 30px 20px;
     background-color: #ffffff; /* Light grey background */
@@ -235,12 +247,12 @@ section{
     text-decoration: none;
     transition: color 0.3s ease;
   }
-  
+
   .social-links li a:hover,
   .quick-links li a:hover {
     color: #ffd700; /* Gold hover color */
   }
-  
+
   .footer-bottom {
     text-align: center;
     margin-top: 30px;
@@ -248,6 +260,8 @@ section{
     border-top: 1px solid #000000;
     padding-top: 10px;
   }
+
+
   
   
     
