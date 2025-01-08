@@ -23,6 +23,22 @@ header{
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0px 4px 10px rgba(0.5, 0.5, 0.5, 0.1); /* Subtle shadow */
 }
+/*header whatsapp*/
+.whatsapp-header-btn{
+  display: inline-block;
+  border: 3px solid #0d7d00;
+  font-size: 15px;
+  color: rgb(0, 0, 0) ;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  transition: all .45s ease;
+  background-color: rgb(255, 255, 255);
+}
+.whatsapp-header-btn:hover{
+color: rgb(17, 110, 0);
+}
 .logo img{
     max-width: 150px;
     height: auto;
@@ -214,6 +230,24 @@ section{
     transform: scale(1.1);
   }
   /* FOOTER SECTION */
+  .whatsapp-btn{
+    display: inline-block;
+    border: 3px solid #0d7d00;
+    font-size: 30px;
+    color: rgb(0, 0, 0) ;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: all .45s ease;
+    background-color: rgb(255, 255, 255);
+ }
+ .whatsapp-btn:hover{
+  letter-spacing: 4px;
+  opacity: 1.8;
+  color: rgb(38, 255, 0);
+ }
+
   .footer-section {
     background-color: #ffffff;
     color: #2e2e2e;
