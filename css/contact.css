@@ -209,6 +209,182 @@ align-items: center;
   .footerlogo h2{
     font-size: 10px;
   }
+
+  /* Media Queries for devices with max-width of 768px */
+@media (max-width: 768px) {
+  header {
+      flex-direction: row;
+      padding: 10px;
+  }
+
+  .logo img {
+      max-width: 120px;
+  }
+
+  .nav-header {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .nav-header a {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  .contact-container {
+      flex-direction: column;
+      padding: 30px 20px;
+      margin-top: 10%;
+  }
+
+  .contact-left {
+      align-items: center;
+      margin-top: 10%;
+  }
+
+  .contact-left-title h2 {
+      font-size: 30px;
+  }
+
+  .contact-inputs {
+      width: 90%;
+  }
+
+  .footer-section {
+    text-align: center; /* Align text and content to the center */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stack the footer columns vertically */
+    align-items: center; /* Center-align the items */
+    gap: 20px; /* Add spacing between the columns */
+  }
+
+  .footer-column h3 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 1.5rem; /* Adjust text size for readability */
+  }
+
+  .social-links li,
+  .quick-links li {
+    margin-bottom: 5px; /* Reduce spacing for compactness */
+  }
+
+  .social-links li a,
+  .quick-links li a {
+    font-size: 1.2rem; /* Adjust link text size */
+  }
+
+  .footer-bottom {
+    margin-top: 20px; /* Add spacing above the footer bottom section */
+    font-size: 0.8rem; /* Adjust font size */
+  }
+
+  .footerlogo {
+    max-width: 120px; /* Resize the logo for smaller screens */
+  }
+}
+
+/* Media Queries for devices with max-width of 480px */
+@media (max-width: 480px) {
+  /* Header and Navbar */
+  header {
+    flex-direction: row; /* Stack items vertically */
+    padding: 10px; /* Add padding for mobile */
+    align-items: center; /* Center header content */
+}
+
+.logo img {
+    max-width: 120px; /* Reduce logo size */
+}
+
+.nav-header {
+    flex-direction: row; /* Stack navigation items */
+    align-items: center; /* Center nav items */
+}
+
+.nav-header a {
+    padding: 5px 8px; /* Adjust padding for smaller screens */
+    font-size: 10px; /* Reduce font size */
+    margin: 0; /* Remove margin */
+}
+
+#menu-icon {
+    font-size: 30px; /* Smaller menu icon */
+}
+.whatsapp-header-btn {
+  font-size: 12px; /* Smaller font size */
+  padding: 5px 10px; /* Adjust padding */
+}
+
+  .contact-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+  }
+
+  .contact-left-title h2 {
+      font-size: 24px;
+      margin-top: 10%;
+  }
+  .contact-right-img{
+    display: none;
+  }
+
+  .contact-inputs {
+      width: 100%;
+      padding-left: 15px;
+  }
+
+  .footer-section {
+    text-align: center; /* Center-align the entire footer content */
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stack all footer columns vertically */
+    align-items: center; /* Center-align the items */
+    gap: 15px; /* Adjust spacing between columns for compactness */
+    background-color: #ffffff;
+  }
+
+  .footer-column h3 {
+    font-size: 1rem; /* Reduce font size for headings */
+    margin-bottom: 10px; /* Adjust spacing below headings */
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .social-links li,
+  .quick-links li {
+    margin-bottom: 5px; /* Reduce spacing between list items */
+  }
+
+  .social-links li a,
+  .quick-links li a {
+    font-size: 0.8rem; /* Adjust font size for links */
+    padding: 5px 0; /* Add some vertical padding for touch-friendliness */
+  }
+
+  .footer-bottom {
+    margin-top: 15px; /* Adjust spacing above the footer bottom */
+    font-size: 0.7rem; /* Reduce font size for compactness */
+  }
+
+  .footerlogo {
+    max-width: 100px; /* Further resize the logo for smaller devices */
+  }
+}
+
   
 
 

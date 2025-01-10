@@ -1,86 +1,88 @@
 /* General Styles */
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: "Nunito", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background-color: #ffffff;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #ffffff;
 }
 /*NAVBAR-HOMEPAGE*/
 header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index:1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1px 1px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0.5, 0.5, 0.5, 0.1); /* Subtle shadow */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index:1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 1px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0.5, 0.5, 0.5, 0.1); /* Subtle shadow */
 }
-/*header whatsapp*/
+/*Header whatsapp*/
 .whatsapp-header-btn{
-  display: inline-block;
-  border: 3px solid #0d7d00;
-  font-size: 15px;
-  color: rgb(0, 0, 0) ;
-  padding: 5px 15px;
-  text-decoration: none;
-  border-radius: 30px;
-  letter-spacing: 1px;
-  transition: all .45s ease;
-  background-color: rgb(255, 255, 255);
+display: inline-block;
+border: 3px solid #0d7d00;
+font-size: 15px;
+color: rgb(0, 0, 0) ;
+padding: 5px 15px;
+text-decoration: none;
+border-radius: 30px;
+letter-spacing: 1px;
+transition: all .45s ease;
+background-color: rgb(255, 255, 255);
 }
 .whatsapp-header-btn:hover{
 color: rgb(17, 110, 0);
 }
+
 .logo img{
-    max-width: 150px;
-    height: auto;
+  max-width: 150px;
+  height: auto;
 }
 .nav-header{
-    display: flex;
-    padding-bottom: 10px;
-    margin: 0%;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0.5, 0.5, 0.5, 0.1); /* Subtle shadow */
+  display: flex;
+  padding-bottom: 10px;
+  margin: 0%;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0.5, 0.5, 0.5, 0.1); /* Subtle shadow */
 }
 .nav-header a{
-    color:rgb(0, 0, 0);
-    font-size: 15px;
-    text-transform: capitalize;
-    padding: 10px 30px;
-    font-weight: 400;
-    transition: all .40s ease;
-    text-decoration: none; 
+  color:rgb(0, 0, 0);
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  font-weight: 400;
+  transition: all .40s ease;
+  text-decoration: none; 
 }
 .nav-header a:hover{
-    color:rgb(0, 149, 179);
-    letter-spacing: 2px;
-    opacity: 0.6; 
+  color:rgb(0, 149, 179); 
+  letter-spacing: 2px;
+  opacity: 0.6; 
 }
 .nav-icon{
 display: flex;
 align-items: center;
 }
 .nav-icon i{
-    margin-right: 40px;
-    color:rgb(69, 68, 68);
-    font-size: 20px;
-    font-weight: 400;
-    transition: all .40s ease;
+  margin-right: 40px;
+  color:rgb(69, 68, 68);
+  font-size: 20px;
+  font-weight: 400;
+  transition: all .40s ease;
 }
 #menu-icon{
-    font-size: 35px;
-    color:rgb(69, 68, 68);
-    z-index: 10001;
-    cursor: pointer;
+  font-size: 35px;
+  color:rgb(69, 68, 68);
+  z-index: 10001;
+  cursor: pointer;
 }
+
 /*CAROUSEL - HOMEPAGE*/
 .c-item{
 height: 595px;
@@ -95,6 +97,7 @@ object-fit: cover;
   background-color: transparent;
   padding: 20px;
 }
+
 .custom-caption {
     text-align: left; /* Align text to the left */
     position: absolute;
@@ -104,7 +107,7 @@ object-fit: cover;
     border-radius: 8px;
     max-width: 400px; /* Limit width for readability */
   }
-  
+
   .custom-caption h2 {
     color: black;
     font-size: 50px;
@@ -301,8 +304,272 @@ section{
   .footerlogo h2{
     font-size: 10px;
   }
-  
 
-  
-  
+  /*---------------------------------MAX WIDTH 768PX-------------------------------*/
+@media (max-width: 768px) {
+  header {
+      flex-direction:row; /* Stack items vertically */
+      padding: 5px; /* Add padding for mobile */
+  }
+
+  .nav-header {
+      flex-direction: row; /* Stack navigation items */
+      align-items: center; /* Center items */
+  }
+
+  .nav-header a {
+      padding: 5px 10px; /* Adjust padding for smaller screens */
+      font-size: 12px; /* Smaller font size */
+  }
+  .d-md-block{
+    height: 200px;
+    background-color: transparent;
+    padding: 0%;
+
+  }
+  .whatsapp-header-btn{
+    display: inline-block;
+    border: 3px solid #0d7d00;
+    font-size: 8px;
+    color: rgb(0, 0, 0) ;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: all .45s ease;
+    background-color: rgb(255, 255, 255);
+  }
+  .custom-caption h2{
+   font-size: 30px;
+  }
+  .custom-caption p{
+    font-size: 20px;
+  }
+  .c-item{
+    height: 500px;
+    flex-direction: column;
+    }
     
+    .c-img{
+    height: 100%;
+    object-fit: cover;
+    }
+
+  .main-home {
+      grid-template-columns: 1fr; /* Single column layout */
+      height: auto; /* Allow height to adjust */
+      padding: 20px; /* Add padding */
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-text h1 {
+      font-size: 30px; /* Smaller font size */
+      margin-top: 20px; /* Adjust margin */
+  }
+
+  .main-text p {
+      font-size: 20px; /* Smaller font size */
+  }
+
+  .vision-container {
+      padding: 30px 20px; /* Adjust padding */
+  }
+
+  .section-heading {
+      font-size: 40px; /* Smaller font size */
+  }
+
+  .vision-container p {
+      font-size: 1rem; /* Smaller font size */
+  }
+
+  .collaborators-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid for smaller screens */
+  }
+
+  .footer-section {
+    text-align: center; /* Align text and content to the center */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stack the footer columns vertically */
+    align-items: center; /* Center-align the items */
+    gap: 20px; /* Add spacing between the columns */
+  }
+
+  .footer-column h3 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 1.5rem; /* Adjust text size for readability */
+  }
+
+  .social-links li,
+  .quick-links li {
+    margin-bottom: 5px; /* Reduce spacing for compactness */
+  }
+
+  .social-links li a,
+  .quick-links li a {
+    font-size: 1.2rem; /* Adjust link text size */
+  }
+
+  .footer-bottom {
+    margin-top: 20px; /* Add spacing above the footer bottom section */
+    font-size: 0.8rem; /* Adjust font size */
+  }
+
+  .footerlogo {
+    max-width: 120px; /* Resize the logo for smaller screens */
+  }
+}
+
+
+/*---------------------------(MAX WIDTH 480PX)------------------------------ */
+@media (max-width: 480px) {
+  /* Header and Navbar */
+  header {
+      flex-direction: row; /* Stack items vertically */
+      padding: 10px; /* Add padding for mobile */
+      align-items: center; /* Center header content */
+  }
+
+  .logo img {
+      max-width: 120px; /* Reduce logo size */
+  }
+
+  .nav-header {
+      flex-direction: row; /* Stack navigation items */
+      align-items: center; /* Center nav items */
+  }
+
+  .nav-header a {
+      padding: 5px 8px; /* Adjust padding for smaller screens */
+      font-size: 10px; /* Reduce font size */
+      margin: 0; /* Remove margin */
+  }
+
+  .whatsapp-header-btn {
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 10px; /* Adjust padding */
+}
+
+  #menu-icon {
+      font-size: 30px; /* Smaller menu icon */
+  }
+
+  .d-md-block {
+      height: 80px; /* Adjust height for smaller screens */
+      background-color: transparent;
+  }
+  .whatsapp-header-btn{
+    display: inline-block;
+    border: 3px solid #0d7d00;
+    font-size: 15px;
+    color: rgb(0, 0, 0) ;
+    padding: 2px 10px;
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: all .45s ease;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .custom-caption h2 {
+      font-size: 10px; /* Smaller caption heading */
+      color: #000000;
+  }
+
+  .custom-caption p {
+      font-size: 10px; /* Smaller caption paragraph */
+  }
+
+  .c-item {
+      height: 300px; /* Adjust height for smaller screens */
+      flex-direction: column;
+      margin-top: 10%;
+      padding: auto;
+  }
+  .c-img {
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .main-home {
+      grid-template-columns: 1fr; /* Single column layout */
+      height: auto; /* Allow height to adjust */
+      padding: 20px; /* Add padding */
+      grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .main-text h1 {
+      font-size: 24px; /* Smaller font size */
+      margin-top: 15px; /* Adjust margin */
+  }
+
+  .main-text p {
+      font-size: 16px; /* Smaller font size */
+  }
+
+  .vision-container {
+      padding: 20px 10px; /* Adjust padding */
+  }
+
+  .section-heading {
+      font-size: 30px; /* Smaller font size */
+  }
+
+  .vision-container p {
+      font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .collaborators-grid {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust grid for smaller screens */
+  }
+
+  .footer-section {
+    text-align: center; /* Center-align the entire footer content */
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stack all footer columns vertically */
+    align-items: center; /* Center-align the items */
+    gap: 15px; /* Adjust spacing between columns for compactness */
+  }
+
+  .footer-column h3 {
+    font-size: 1rem; /* Reduce font size for headings */
+    margin-bottom: 10px; /* Adjust spacing below headings */
+  }
+
+  .footer-column p,
+  .footer-column ul {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .social-links li,
+  .quick-links li {
+    margin-bottom: 5px; /* Reduce spacing between list items */
+  }
+
+  .social-links li a,
+  .quick-links li a {
+    font-size: 0.8rem; /* Adjust font size for links */
+    padding: 5px 0; /* Add some vertical padding for touch-friendliness */
+  }
+
+  .footer-bottom {
+    margin-top: 15px; /* Adjust spacing above the footer bottom */
+    font-size: 0.7rem; /* Reduce font size for compactness */
+  }
+
+  .footerlogo {
+    max-width: 100px; /* Further resize the logo for smaller devices */
+  }
+}
