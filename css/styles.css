@@ -1,5 +1,5 @@
 /* General Styles */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,78 +9,111 @@
   font-style: normal;
   background-color: #ffffff;
 }
-/*NAVBAR-HOMEPAGE*/
-header{
+
+/* NAVBAR-HOMEPAGE */
+header {
   position: fixed;
   width: 100%;
   top: 0;
   right: 0;
-  z-index:1000;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1px 1px;
+  padding: 10px 20px;
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0px 4px 10px rgba(0.5, 0.5, 0.5, 0.1); /* Subtle shadow */
-}
-/*Header whatsapp*/
-.whatsapp-header-btn{
-display: inline-block;
-border: 3px solid #0d7d00;
-font-size: 15px;
-color: rgb(0, 0, 0) ;
-padding: 5px 15px;
-text-decoration: none;
-border-radius: 30px;
-letter-spacing: 1px;
-transition: all .45s ease;
-background-color: rgb(255, 255, 255);
-}
-.whatsapp-header-btn:hover{
-color: rgb(17, 110, 0);
 }
 
-.logo img{
-  max-width: 150px;
-  height: auto;
+.logo img {
+  max-height: 50px;
 }
-.nav-header{
+
+.nav-header {
   display: flex;
-  padding-bottom: 10px;
-  margin: 0%;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 4px 10px rgba(0.5, 0.5, 0.5, 0.1); /* Subtle shadow */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.nav-header a{
-  color:rgb(0, 0, 0);
-  font-size: 15px;
-  text-transform: capitalize;
-  padding: 10px 30px;
-  font-weight: 400;
-  transition: all .40s ease;
-  text-decoration: none; 
+
+.nav-header a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  font-size: 16px;
+  transition: all 0.4s ease;
 }
-.nav-header a:hover{
-  color:rgb(0, 149, 179); 
+
+.nav-header a:hover {
+  color: rgb(0, 149, 179);
   letter-spacing: 2px;
-  opacity: 0.6; 
+  opacity: 0.6;
 }
-.nav-icon{
-display: flex;
-align-items: center;
+
+.whatsapp-header-btn {
+  display: inline-block;
+  border: 3px solid #0d7d00;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+  transition: all 0.45s ease;
+  background-color: rgb(255, 255, 255);
 }
-.nav-icon i{
-  margin-right: 40px;
-  color:rgb(69, 68, 68);
-  font-size: 20px;
-  font-weight: 400;
-  transition: all .40s ease;
+
+.whatsapp-header-btn:hover {
+  color: rgb(17, 110, 0);
 }
-#menu-icon{
-  font-size: 35px;
-  color:rgb(69, 68, 68);
-  z-index: 10001;
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #000000;
   cursor: pointer;
+  margin-right: 10px; /* Align next to the WhatsApp button */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-header {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    width: 100%;
+    display: none;
+    z-index: 1000;
+    border: 1px solid #000000;
+  }
+
+  .nav-header.active {
+    display: flex;
+  }
+
+  .nav-header a {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav-header a:hover {
+    color: #00aef1;
+  }
+
+  .hamburger {
+    display: block;
+    order: 1; /* Ensure the hamburger appears before WhatsApp */
+    margin-right: 0;
+    margin-left: auto; /* Push it next to WhatsApp button */
+  }
+
+  .whatsapp-header-btn {
+    order: 2;
+    margin-left: 10px;
+  }
 }
 
 /*CAROUSEL - HOMEPAGE*/
@@ -123,6 +156,42 @@ object-fit: cover;
     margin-bottom: 20px;
     font-style: italic;
   }
+/* General Carousel Container Styles */
+.carousel-container {
+  width: 80%; /* Default width for larger screens */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 90%; /* Make the container narrower */
+  }
+  .c-item {
+    height: 300px; /* Reduce item height */
+  }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 95%; /* Further narrow container on small screens */
+  }
+  .c-item {
+    height: 250px; /* Further reduce item height */
+  }
+}
+@media (max-width: 320px) {
+  .carousel-container {
+    width: 75%; /* Further narrow container on small screens */
+  }
+  .c-item {
+    height: 200px; /* Further reduce item height */
+  }
+}
+
+
   
 /*FIRST SECTION- HOMEPAGE*/
 section{

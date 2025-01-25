@@ -28,21 +28,34 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>  <!--header logo-->
-        <a href="index.html" class="logo"><img src="img/mainlogo1.png"></a>
-        <!--header links-->
-            <ul class="nav-header">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact</a>
-            </ul>
-        <!--header icons-->
-        <div class="header-whatsapp">
-          <h6>Place an Order</h6>
-            <a href="https://wa.me/+254791802155" target="_blank"  class="whatsapp-header-btn">ORDER HERE<i class='bx bxl-whatsapp'></i></a>
-        </div>         
-    </header>
+
+  <header>
+    <!-- Logo -->
+    <a href="index.html" class="logo"><img src="img/mainlogo1.png" alt="Logo"></a>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class='bx bx-menu'></i>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-header">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </ul>
+
+    <!-- WhatsApp Order Section -->
+    <a href="https://wa.me/+254791802155" target="_blank" class="whatsapp-header-btn"><i class='bx bxl-whatsapp'></i></a>
+    </a>
+</header>
+
+<script>
+    function toggleMenu() {
+        const navHeader = document.querySelector('.nav-header');
+        navHeader.classList.toggle('active');
+    }
+</script>
 
 <!-- Bootstrap Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

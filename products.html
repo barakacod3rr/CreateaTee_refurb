@@ -29,20 +29,33 @@
   </head>
 <body>
     <!-- Header -->
-    <header>  <!--header logo-->
-        <a href="index.html" class="logo"><img src="img/mainlogo1.png"></a>
-        <!--header links-->
-            <ul class="nav-header">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact</a>
-            </ul>
-        <!--header icons-->
-        <div class="header-whatsapp">
-          <h6>Place an Order</h6>
-            <a href="https://wa.me/+254791802155" target="_blank"  class="whatsapp-header-btn">ORDER HERE<i class='bx bxl-whatsapp'></i></a>
-        </div> 
-    </header>
+    <header>
+      <!-- Logo -->
+      <a href="index.html" class="logo"><img src="img/mainlogo1.png" alt="Logo"></a>
+  
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+          <i class='bx bx-menu'></i>
+      </div>
+  
+      <!-- Navigation Links -->
+      <ul class="nav-header">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+      </ul>
+  
+      <!-- WhatsApp Order Section -->
+      <a href="https://wa.me/+254791802155" target="_blank" class="whatsapp-header-btn"><i class='bx bxl-whatsapp'></i></a>
+      </a>
+  </header>
+  
+  <script>
+      function toggleMenu() {
+          const navHeader = document.querySelector('.nav-header');
+          navHeader.classList.toggle('active');
+      }
+  </script>
     <main>
         <!-----------------------ADULTS: UNISEX Section---------------------------------------------->
         <!----------------------------TSHIRTS--------------->
@@ -63,6 +76,21 @@
                   <img src="img/orangish.jpg" alt="Orange T-Shirt" class="thumbnail">
                   <img src="img/mustard.jpg" alt="mustard T-Shirt" class="thumbnail">
                   <img src="img/Burgundy.jpg" alt="Burgundy T-Shirt" class="thumbnail">
+                </div>
+              </div>
+            </div>
+            <!--LONG SLEEVE SHIRTS-->
+               <div class="card">
+              <img src="img/Tamarindshirt.png" alt="longsleeve-unisex" class="card-img">
+              <div class="card-content">
+                <h3>Long Sleeve T-shirts</h3>
+                <p><strong>Sizes:</strong> S, M, L, XL</p>
+                <p><strong>Price:</strong> KES 3,000 + VAT of 16%</p>
+                <p><strong>Available Colors:</strong></p>
+                <div class="color-thumbnails">
+                  <img src="img/blackpic.jpg" alt="black longsleeve" class="thumbnail">
+                  <img src="img/navybluepic.jpg" alt="Navy Blue longsleeve" class="thumbnail">
+                  <img src="img/greypic.jpg" alt="Grey longsleeve" class="thumbnail">
                 </div>
               </div>
             </div>
@@ -102,7 +130,7 @@
             </div>
             <!-------------------Sweatshirts------------------------>
             <div class="card">
-              <img src="img/SSpic.jpg" alt="sweatshirt-unisex" class="card-img">
+              <img src="img/sweatshirt.png" alt="sweatshirt-unisex" class="card-img">
               <div class="card-content">
                 <h3>Sweatshirts</h3>
                 <p><strong>Sizes:</strong> S, M, L, XL</p>
@@ -124,7 +152,7 @@
           <h2>ADULTS: LADIES SECTION</h2>
           <div class="card-container">
             <div class="card">
-              <img src="img/gl2tshirt.png" alt="Ladies T-Shirt" class="card-img">
+              <img src="img/gl2shirt.png" alt="Ladies T-Shirt" class="card-img">
               <div class="card-content">
                 <h3>T-Shirts</h3>
                 <p><strong>Sizes:</strong> S, M, L, XL</p>
