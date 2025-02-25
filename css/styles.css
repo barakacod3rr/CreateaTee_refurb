@@ -116,134 +116,235 @@ header {
   }
 }
 
-/*CAROUSEL - HOMEPAGE*/
-.c-item{
-height: 595px;
+/* CAROUSEL - HOMEPAGE */
+.c-item {
+  height: 595px; /* Default height for large screens */
 }
 
-.c-img{
-height: 100%;
-object-fit: cover;
-}
-/* CAROUSEL CAPTION-HOMEPAGE */
-.d-md-block{
-  background-color: transparent;
-  padding: 20px;
+.c-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures the image fills without distortion */
 }
 
-.custom-caption {
-    text-align: left; /* Align text to the left */
-    position: absolute;
-    top: 50%; /* Vertically center the caption */
-    left: 5%; /* Position caption on the left side */
-    transform: translateY(-50%); /* Adjust for proper centering */
-    border-radius: 8px;
-    max-width: 400px; /* Limit width for readability */
-  }
-
-  .custom-caption h2 {
-    color: black;
-    font-size: 50px;
-    text-transform: capitalize;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 30px;
-  }
- .custom-caption p {
-    color: black;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-style: italic;
-  }
-/* General Carousel Container Styles */
-.carousel-container {
-  width: 80%; /* Default width for larger screens */
-  margin: 0 auto;
-  position: relative;
-}
-
-/* Medium Screens (Tablets) */
+/* Media Queries for Responsive Carousel */
 @media (max-width: 768px) {
-  .carousel-container {
-    width: 90%; /* Make the container narrower */
-  }
   .c-item {
-    height: 300px; /* Reduce item height */
+    height: 450px; /* Reduce height for tablets */
+  }
+  .custom-caption {
+    max-width: 300px; /* Reduce caption width */
+  }
+  .custom-caption h2 {
+    font-size: 36px; /* Decrease heading size */
+  }
+  .custom-caption p {
+    font-size: 20px; /* Decrease paragraph size */
   }
 }
 
-/* Small Screens (Phones) */
 @media (max-width: 480px) {
-  .carousel-container {
-    width: 95%; /* Further narrow container on small screens */
-  }
   .c-item {
-    height: 250px; /* Further reduce item height */
+    height: 350px; /* Reduce height for smaller screens */
+  }
+  .custom-caption {
+    max-width: 250px;
+    left: 3%; /* Adjust position */
+  }
+  .custom-caption h2 {
+    font-size: 28px;
+  }
+  .custom-caption p {
+    font-size: 18px;
   }
 }
-@media (max-width: 320px) {
-  .carousel-container {
-    width: 75%; /* Further narrow container on small screens */
-  }
+
+@media (max-width: 302px) {
   .c-item {
-    height: 200px; /* Further reduce item height */
+    height: 250px; /* Reduce height for very small screens */
+  }
+  .custom-caption {
+    max-width: 200px;
+    left: 2%;
+  }
+  .custom-caption h2 {
+    font-size: 20px;
+  }
+  .custom-caption p {
+    font-size: 16px;
   }
 }
 
 
-  
-/*FIRST SECTION- HOMEPAGE*/
-section{
-    padding: 5% 10%;
-}
-.main-home{
-    width: 100%;
-    height: 105vh;
-    background-image: url(../img/homp.png);
-    background-position: center;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    filter: brightness(0.9);
-}
-.main-text h1{
-    color: black;
-    font-size: 50px;
-    text-transform: capitalize;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 30px;
-}
-.main-text p{
-    color: black;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-style: italic;
+/* ABOUT US - HOMEPAGE */
 
+/* Section Background */
+.main-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px;
+  width: 100%;
+  min-height: 80vh; /* Full viewport height */
+  background-color: #ADD8E6; /* Light blue background */
 }
-.main-btn{
-    display: inline-block;
-    border: 2px solid #000000;
-    font-size: 15px;
-    color: black ;
-    padding: 16px 30px;
-    text-decoration: none;
-    border-radius: 30px;
-    letter-spacing: 1px;
-    transition: all .45s ease;
+
+/* Text styles */
+.main-home h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000; /* Black text for contrast */
+  margin-bottom: 15px;
+  background: none; /* Remove any background */
 }
-.main-btn a{
-    color: black;
-    font-weight: 200px;
+
+.main-home p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000; /* Black text for contrast */
+  max-width: 800px;
+  padding: 0 20px;
+  background: none; /* Remove any background */
 }
-.main-btn:hover{
-    color:#00aef1; 
-    letter-spacing: 4px;
-    opacity: 1.4;
+
+/* Button styles */
+.main-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #FFA500; /* Light orange button */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  border: none; /* Remove any border */
 }
+
+.main-btn:hover {
+  background-color: #FF8C00; /* Slightly darker orange on hover */
+  transform: scale(1.05);
+}
+
+/* =================== MOBILE RESPONSIVENESS =================== */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .main-home {
+    padding: 40px 15px;
+  }
+
+  .main-home h1 {
+    font-size: 2rem;
+  }
+
+  .main-home p {
+    font-size: 1.3rem;
+  }
+
+  .main-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Small devices (480px and below) */
+@media (max-width: 480px) {
+  .main-home {
+    padding: 30px;
+  }
+
+  .main-home p {
+    font-size: 1.2rem;
+  }
+
+  .main-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Extra small devices (302px and below) */
+@media (max-width: 302px) {
+  .main-home {
+    padding: 20px;
+  }
+
+  .main-home h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-home p {
+    font-size: 1rem;
+  }
+
+  .main-btn {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+}
+
+/*WHY CHOOSE US? SECTION*/
+.feature-card {
+  background: #fff;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-card img {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.feature-card:hover {
+  box-shadow: 0px 4px 15px rgba(255, 102, 0, 0.7);
+  transform: translateY(-5px);
+}
+
+h4 {
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+p {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .feature-card {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+      max-width: 95%;
+  }
+}
+
+@media (max-width: 302px) {
+  .feature-card {
+      max-width: 100%;
+  }
+}
+
 /* OUR VISION SECTION-HOMEPAGE */
 .vision-section {
     padding: 30px 20px;
@@ -260,9 +361,10 @@ section{
     text-align: center; /* Center text content */
   }
   .section-heading {
-    font-size: 80px;
-    color: #114d8d; /* Blue color for heading */
+    font-size: 60px;
+    color: black; /* Blue color for heading */
     margin-bottom: 30px;
+    font-weight: bold;
   }
   .vision-container p {
     font-size: 1.2rem;
@@ -276,9 +378,10 @@ section{
     text-align: center;
   }
   .section-heading {
-    font-size: 2rem;
-    color: #f7941d;
+    font-size: 1.6rem;
+    color: black;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   .section-subheading {
     font-size: 1.2rem;
